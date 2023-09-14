@@ -13,6 +13,9 @@
             width: 100%;
             .header-logo {
                 margin-right: 50px;
+                .logo-img{
+                    max-width: 100%;
+                }
             }
             .header-nav
             {
@@ -34,7 +37,7 @@
     .nav-main-menu {
         width: 100%;
         padding: 0px;
-        float: left;
+        // float: left;
     }
     .main-menu {
         display: inline-block;
@@ -182,6 +185,8 @@
         background-color: $background-bg-5;
     }
 }
+
+
 .sticky-bar {
     &.stick {
         -webkit-animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;

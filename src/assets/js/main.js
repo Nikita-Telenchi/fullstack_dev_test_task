@@ -565,5 +565,27 @@ function checkBilled2() {
 }
 //Perfect Scrollbar
 if ($(".mobile-header-wrapper-inner").length) {
-  const ps = new PerfectScrollbar(".mobile-header-wrapper-inner");
+  const ps = new PerfectScrollbar(".mobile-header-wrapper-inner"); 
+}
+
+
+function changeArrow(){
+  $('.img-btn-new').attr('src', '../assets/imgs/template/icons/arrowBlack.svg')
+}
+function backArrow(){
+  $('.img-btn-new').attr('src', '../assets/imgs/template/icons/arrowWhite.svg')
+}
+
+function onclickForm(){
+  $.ajax({
+    url: 'https://api.byteplex.info/api/test/contact/',
+    type: 'POST',
+    data: JSON.stringify({
+      longUrl: $scope.url
+    }),
+    contentType: 'application/json',
+    success: function(got) {
+      return alert("shortened url: " + got.id);
+    }
+});
 }

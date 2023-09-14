@@ -1,0 +1,108 @@
+.contact{
+    background-color: $color-gray-100;
+    display: flex;
+    justify-content: center;
+    .body-contact {
+        width: vw(1252px);
+        
+        padding-top: vw(91px);
+        padding-bottom: vw(85px);
+        .top-part{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: vw(60px);
+            .top-part__left{
+
+                .title-titul{
+                    font-size: vw(14px);
+                    color: $color-gray-500;
+                    font-family: 'Noto Sans';
+                    font-weight: 400;
+                    letter-spacing: 0.125rem;
+                    text-transform: uppercase;
+                }
+
+                .title-major{
+                    font-size: vw(35px);
+                    font-weight: 700;
+                    line-height: 2.375rem;
+                }
+
+                .top-part__left__desc {
+                    font-family: 'Noto Sans';
+                    color: $color-gray-600;
+                    font-size: vw(16px);
+                    width: vw(436px);
+                }
+            }
+            .top-part__right{
+                img{
+                     width: vw(129px);
+                }
+               
+            }
+        }
+        .base-part{
+            display: flex;
+            gap: vw(94px);
+            .base-part__left {
+                width: vw(259px);
+                .title-adress{
+                    display: flex;
+                    gap: vw(13px);
+                    margin-bottom: vw(15px);
+                    img{
+                        width: vw(18px);
+                    }
+                    font-size: vw(18px);
+                    font-weight: 700;
+                }
+                .desc-adress{
+                    color: $color-gray-600;
+                    font-size: vw(16px);
+                    margin-bottom: vw(5px);
+                }
+                .conctact-adress{
+                    color: $color-gray-600;
+                    text-decoration: underline;
+                    font-size: vw(14px);
+                    margin-bottom: vw(4px);
+                }
+            }
+            .base-part__right-form{
+
+                .form {
+                    display: flex;
+                    flex-direction: column;
+                    width: vw(893px);
+                    .input-contact{
+                        padding: vw(20px) vw(30px);
+                        width: 100%;
+                        font-family: 'Noto Sans';
+                        font-size: vw(14px);
+                        color: $color-gray-400;
+                        background-color: white;
+                        outline: none;
+                        border: 0px;
+                        margin-bottom: vw(24px);
+                    }
+                    .area{
+                        height: vw(150px);
+                    }
+                    .bottom-base-part {
+                        display: flex;
+                        gap: vw(65px);
+                        align-items: center;
+                        .botton-base-part__mini-text {
+                            font-family: 'Noto Sans';
+                            font-size: vw(14px);
+                            color: $color-gray-600;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

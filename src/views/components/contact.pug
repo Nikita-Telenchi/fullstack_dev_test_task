@@ -1,0 +1,29 @@
+section.contact
+    .body-contact
+        .top-part
+            .top-part__left
+                .title-titul Contact us
+                .title-major Have an prject in mind?
+                .top-part__left__desc The right move at the right time saves your investment. live the dream of expanding your business.
+            .top-part__right 
+                img(src='./assets/imgs/template/icons/wave.svg')
+        .base-part
+            .base-part__left 
+                .title-adress
+                    img(src='./assets/imgs/template/icons/contact-home.svg')
+                    | Corporation 
+                .desc-adress 4517 Washington Ave. Manchester, Kentucky 39495
+                .conctact-adress (239) 555-0108
+                .conctact-adress contact@company.com
+            .base-part__right-form
+                form(method="POST" action="https://api.byteplex.info/api/test/contact/" enctype='application/json').form
+                    input.input-contact(name="name" type="text" placeholder='Name' )
+                    input.input-contact(name="emai" type="email" placeholder='Email' )
+                    textarea.input-contact.area(name="message" type="text" placeholder='Message' ) 
+                    .bottom-base-part 
+                        button.btn-new(onmouseenter='changeArrow()' onmouseleave='backArrow()' type='submit')  
+                            | Send Message
+                            img.img-btn-new(src='../assets/imgs/template/icons/arrowWhite.svg')      
+                        .botton-base-part__mini-text By clicking contact us button, you agree our terms and policy,
+                    
+

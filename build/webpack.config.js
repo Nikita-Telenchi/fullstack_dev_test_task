@@ -11,6 +11,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
+
+
 const ASSET_PATH = process.env.ASSET_PATH
 
 // Files
@@ -29,6 +31,7 @@ module.exports = (env) => {
     context: path.join(__dirname, "../src"),
     entry: {
       app: path.join(__dirname, "../src/app.js"),
+      index: path.join(__dirname, "../src/views/index.pug"),
     },
     output: {
       publicPath: ASSET_PATH,
@@ -37,9 +40,9 @@ module.exports = (env) => {
       clean: true,
     },
     devServer: {
-      contentBase: path.join(__dirname, "../src"),
-      compress: true,
+    
       open: true,
+      compress: true,
     },
     resolve: {
       extensions: [".js"],

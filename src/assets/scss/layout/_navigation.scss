@@ -1,4 +1,4 @@
-.mobile-header-wrapper-style {
+.mobile-header-wrapper-style { 
     position: fixed;
     top: 0;
     width: 380px;
@@ -237,6 +237,14 @@
         }
     }
 }
+
+@media  screen and (max-width: 479.99px) {
+    .mobile-header-wrapper-style{
+        width: 235px;
+    }   
+}
+
+
 .burger-icon {
     position: absolute;
     width: 24px;
@@ -244,7 +252,7 @@
     cursor: pointer;
     -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    top: 45px;
+    top: 37px;
     right: 27px;
     z-index: 1002;
     & > span {
@@ -281,6 +289,16 @@
         }
     }
 }
+
+@media screen and (min-width: 1025px) {
+    .burger-icon {
+        display: none;
+    }
+}
+@media screen and (max-width: 1024.99px) {
+  
+}
+
 .burger-icon > span::before,
 .burger-icon > span::after {
     position: absolute;

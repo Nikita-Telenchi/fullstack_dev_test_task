@@ -1,0 +1,94 @@
+$color-dark-green: #006D77;
+$color-grey-desc: #667085;
+
+.hero{
+    background-color: #FAEDE3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .body-hero{
+        max-width: 74.6875vw;
+    }
+    .content-body-hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 41.9271vw;
+    }
+    .left-hero-part{
+        display: flex;
+        height: 25.6771vw;
+        width: 36.5625vw;
+        flex-direction: column;
+        justify-content: space-between;
+        .title-large{
+            font-size: 4.1666vw;
+            font-weight: 700;
+            letter-spacing: normal;
+            line-height: 4.5833vw;
+        }
+        .desc{
+            font-size: 1.25vw;
+            color: $color-grey-desc;
+        }
+        .dark-green-text{
+            color: $color-dark-green;
+        }
+
+       
+        
+    }
+   
+
+    .right-hero-part{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .img-girl{
+            width: 37.8125vw;
+            margin-right: -5.3645vw;
+        }
+    }
+}
+
+.btn-new {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 1.1458vw 1.6666vw;
+    font-size: 0.93vw;
+    line-height: 22px;
+    font-weight: 700;
+    border-radius: 32px;
+    width: fit-content;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    img{
+        margin-left: 0.8333vw;
+        width: 0.625vw;
+    }
+    &:hover{
+        background-color: white;
+        color: black;
+        transform: translateY(-2px);
+        transition: .2s;
+    }
+}
+.bnt-new-transparent{
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    padding: 1.1458vw 1.6666vw;
+    font-size: 0.93vw;
+    line-height: 22px;
+    font-weight: 700;
+    border-radius: 32px; 
+    cursor: pointer;
+   
+    img{
+        margin-left: 0.8333vw;
+        width: 0.625vw;
+    }
+}

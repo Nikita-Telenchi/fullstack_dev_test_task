@@ -1,0 +1,54 @@
+.work{
+    height: vw(677px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .body-work{
+        width: 74.6875vw;
+        height: 22.8125vw;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .info-about-w{
+            text-align: center;
+            .title{
+                font-size: vw(56px);
+                font-weight: 700;
+            }
+            .desc{
+                font-size: vw(24px);
+                color: $color-gray-600;
+                width: vw(742px);
+                margin: vw(40px) 0px;
+            } 
+        }
+        .cards-services{
+            margin-top: vw(47px);
+            display: flex;
+            gap: vw(30px);
+            text-align: start;
+          
+            ;
+            img{
+                width: vw(80px);
+            }
+            .card-service{
+                display: flex;
+                gap: vw(21px);
+                padding-bottom: vw(27px);
+                border-bottom: $color-gray-200 2px solid;
+                .title-card{
+                    font-size: vw(28px);
+                    font-weight: 700;
+                    
+                }
+                .desc-card{
+                    color: $color-gray-600;
+                    font-size: vw(16px);
+                }
+            }
+        }
+        
+    }
+}
