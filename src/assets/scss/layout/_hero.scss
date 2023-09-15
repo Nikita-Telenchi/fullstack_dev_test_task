@@ -6,8 +6,23 @@ $color-grey-desc: #667085;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     .body-hero{
         max-width: 74.6875vw;
+        .img-pattern{
+            .fix-img-pattern-up{
+                position: absolute;
+                z-index: 5;
+                right: -20px;
+                top: -80px
+            }
+            .fix-img-pattern-down{
+                position: absolute;
+                z-index: 5;
+                bottom: -60px;
+                left: -5px;
+            }
+        }
     }
     .content-body-hero {
         display: flex;
