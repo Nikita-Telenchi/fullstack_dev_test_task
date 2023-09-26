@@ -577,15 +577,31 @@ function backArrow(){
 }
 
 function onclickForm(){
-  $.ajax({
-    url: 'https://api.byteplex.info/api/test/contact/',
-    type: 'POST',
-    data: JSON.stringify({
-      longUrl: $scope.url
-    }),
-    contentType: 'application/json',
-    success: function(got) {
-      return alert("shortened url: " + got.id);
+  const NAME = $('#nform').val()
+  const EMAIL = $('#eform').val()
+  const MESSAGE = $('#mform').val()
+
+  var data = {
+    "name": NAME,
+    "email": EMAIL,
+    "message": MESSAGE
+}
+
+fetch('https://api.byteplex.info/api/test/contact/', 
+{
+    method:"POST",
+    headers: { "Content-type": "application/json" },
+    body: JSON.stringify(data) }
+)
+.then(
+    function(res){
+        res.json().then(
+            function(r){
+                alert('Response \nname='+r.name+' email='+r.email+' message='+r.message)
+                console.log(r)
+            }
+        )
     }
-});
+)
+
 }

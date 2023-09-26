@@ -16,12 +16,12 @@ section.contact
                 .conctact-adress (239) 555-0108
                 .conctact-adress contact@company.com
             .base-part__right-form
-                form(method="POST" action="https://api.byteplex.info/api/test/contact/" enctype='application/json').form
-                    input.input-contact(name="name" type="text" placeholder='Name' )
-                    input.input-contact(name="emai" type="email" placeholder='Email' )
-                    textarea.input-contact.area(name="message" type="text" placeholder='Message' ) 
+                form.form
+                    input.input-contact(name="name" type="text" placeholder='Name' id='nform')
+                    input.input-contact(name="emai" type="email" placeholder='Email' id='eform' )
+                    textarea.input-contact.area(name="message" type="text" placeholder='Message' id='mform' ) 
                     .bottom-base-part 
-                        button.btn-new(onmouseenter='changeArrow()' onmouseleave='backArrow()' type='submit')  
+                        .btn-new(onmouseenter='changeArrow()' onmouseleave='backArrow()' type='submit' onclick="onclickForm()")  
                             | Send Message
                             img.img-btn-new(src='../assets/imgs/template/icons/arrowWhite.svg')      
                         .botton-base-part__mini-text By clicking contact us button, you agree our terms and policy,
