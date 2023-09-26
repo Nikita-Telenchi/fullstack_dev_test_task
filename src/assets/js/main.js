@@ -576,6 +576,7 @@ function backArrow(){
   $('.img-btn-new').attr('src', '../assets/imgs/template/icons/arrowWhite.svg')
 }
 
+
 // Send data to server
 function onclickForm(){
   const NAME = $('#nform').val()
